@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<HTML>
+	<TITLE>Employee Details</TITLE>
+	<BODY>
+		<TABLE BORDER="1" style="background-color:skyblue">
+			<TR>
+				<TH>Name</TH>
+				<TD><INPUT TYPE="TEXT" MAX="10" NAME="EmployeeName"/></TD>
+			</TR>
+			<TR>
+				<TH>Employee Code</TH>
+				<TD><INPUT TYPE="TEXT" MAX="3" NAME="EmployeeCode"/></TD>
+			</TR>
+			<TR>
+				<TH>Department</TH>
+				<TD>
+					<INPUT TYPE="radio" NAME="dept"/>Admin
+					<br/><INPUT TYPE="radio" NAME="dept"/>HR
+					<br/><INPUT TYPE="radio" NAME="dept"/>Technical
+					<br/><INPUT TYPE="radio" NAME="dept"/>Accounts
+				</TD>
+			</TR>
+			<TR>
+				<TH>Date of Joining</TH>
+				<TD>
+					DD<INPUT TYPE="number" name="date" MIN="01" MAX="31" STEP="01"/>
+					MM<INPUT TYPE="NUMBER" NAME="MONTH" MIN="01" MAX="12" STEP="01"/>
+					YYYY<INPUT TYPE="NUMBER" NAME="MONTH" MIN="1970" MAX="2970" STEP="01"/>
+					
+				</TD>
+			</TR>
+			<TR>
+				<TH>Address</TH>
+				<TD><textarea name="address" rows="5" cols="40"></textarea></TD>
+			</TR>
+			<TR>
+				<TH>Training Program Attended</TH>
+				<TD>
+					<INPUT TYPE="checkbox" NAME="html"/>HTML/DHTML
+					<br/><INPUT TYPE="checkbox" NAME="java"/>Java
+					<br/><INPUT TYPE="checkbox" NAME="cs"/>Client/server
+					<br/><INPUT TYPE="checkbox" NAME="dnet"/>DOT Net
+				</TD>
+			</TR>
+			<TR>
+				<TH>Training Program Need to Attend</TH>
+				<TD>
+					<select name="needed">
+						<option value="JavaScript"/>JavaScript
+						<option value="JDBC"/>JDBC
+						<option value="Spring"/>Spring 3.0
+						<option value="Python"/>Python 
+						<option value="PL/SQL"/>PL/SQL
+					</select>
+				</TD>
+			</TR> 
+			<TR>
+				<TH>Send The Information at</THR>
+				<TD><A HREF="mailto:empinfo@capgemini.com; subject:Employee Details"/>empinfo@capgemini.com</TD>
+			</TR>
+		</TABLE>
+	</BODY>
+</HTML>

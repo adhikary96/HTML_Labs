@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<HTML>
+	<title>Working with forms</title>
+	<BODY><form method="post" enctype="multipart/form-data">
+		<TABLE frame="box" style="background-color:skyblue">
+			<TR><TD>
+				Enter the password:<input type="password" name="password"/>
+				Enter your surname:<input type="text" name="surname"/>
+				<br/><br/>Address:<textarea name="address" rows="5" cols="40">Enter Your Address</textarea>
+				<br/><br/>Select the training programs attended:
+				<br/><input type="checkbox" name="COBOL">COBOL</input>
+					<input type="checkbox" name="IBMS">IBMS</input>
+					<input type="checkbox" name="Java">Java</input>
+				<br/><br/>Select the group you belong to:
+					<input type="radio" name="group">Group 1</input>
+					<input type="radio" name="group">Group 2</input>
+					<input type="radio" name="group">Group 3</input>
+					<input type="radio" name="group">Group 4</input>
+				<br/><br/>Which training program would you like to attend?
+					<select name="program">
+						<option value="JavaScript">JavaScript</option>
+						<option value="CORBA">CORBA</option>
+						<option value="VB6">Visual Basic 6</option>
+					</select>
+				<br/><br/><input type="file" name="selectFile"/>	
+				<br/><br/><input type="button" name="exit" value="Exit"/>
+					<input type="submit" name="save" value="Save"/>
+					<input type="reset" name="reset" value="Reset"/>	
+				
+			</TD></TR>
+		</TABLE>
+	</form></BODY>
+</HTML>
